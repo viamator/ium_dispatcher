@@ -27,6 +27,7 @@ public class BinaryArrayToHexStringRule extends Rule {
             nme.setAttribute(new StringAttribute(ConvertUtils.convertBytesToHexString(bytes)), iString);
         }
 
+
         if (next_ != null)
             next_.applyRule(nme, nme2);
     }

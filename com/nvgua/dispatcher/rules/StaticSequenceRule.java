@@ -52,12 +52,15 @@ public class StaticSequenceRule extends Rule {
         this.path = config.getFullName();
         String sequenceAttribute = config.getAttributeAsString("SequenceAttribute");
         AttributeInfo localAttributeInfo = NMESchema.getInstance().getAttribute(sequenceAttribute);
+
         if (localAttributeInfo == null)
             throw new ConfigurationException("StaticSequenceRule: the attribute SequenceAttribute with the value " + sequenceAttribute + " is not specified in the NMESchema");
         this.counterIndex = localAttributeInfo.getIndex();
+
         if (localAttributeInfo.getPrimitiveType() == 1)
             this.useInt = true;
         this.maxValue = config.getAttributeAsLong("MaxValue", this.useInt ? 2147483647L : 9223372036854775807L);
+
         if (this.maxValue < 1L)
             throw new ConfigurationException("StaticSequenceRule: MaxValue must be greater than zero");
         if ((this.useInt) && (this.maxValue > 2147483647L))

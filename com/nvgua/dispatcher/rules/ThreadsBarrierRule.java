@@ -139,7 +139,7 @@ public class ThreadsBarrierRule extends Rule implements Configurable, Reconfigur
             maximums.clear();
             return builder.toString();
         } else {
-            return "No Data";
+            return  "No Data";
         }
     }
 

@@ -53,6 +53,7 @@ public class RoundRobinPeerRule extends Rule {
                 secondaryAttribute = new StringAttribute();
                 nme.setAttribute(secondaryAttribute, iSecondaryAttribute);
             }
+
             secondaryAttribute.setValue(peerList[secondaryIndex]);
 
             if (log.isLoggable(Level.DEBUG2))

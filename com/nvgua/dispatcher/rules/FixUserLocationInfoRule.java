@@ -50,7 +50,6 @@ public class FixUserLocationInfoRule extends Rule {
             log.logDebug2("FixUserLocationInfoRule.configure()");
         this.iLocationInfo = NMESchema.getInstance().getAttributeIndex(config, "LocationInfoAttribute", true);
     }
-
 }
 
 

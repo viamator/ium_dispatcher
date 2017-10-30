@@ -20,7 +20,6 @@ public class AddBSIDRule extends Rule {
     private int iLocationInfo;
     private int iBSID;
 
-
     @Override
     public void applyRule(NormalizedMeteredEvent nme, NormalizedMeteredEvent nme2) throws RuleException {
         if (log.isLoggable(Level.DEBUG2))

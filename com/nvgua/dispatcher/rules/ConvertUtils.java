@@ -31,6 +31,7 @@ public class ConvertUtils {
         return null;
     }
 
+
     public static byte[] convertHexStringToBytes(String s) throws IllegalArgumentException {
         int len = s.length();
         if (len % 2 != 0)
