@@ -150,6 +150,7 @@ public class ThreadsBarrierRule extends Rule implements Configurable, Reconfigur
             log.logDebug2("ThreadsBarrierRule.applyRule()");
         StringAttribute barrierEntityAttribute = (StringAttribute) nme.getAttribute(iBarrierEntity);
         String barrierEntity = barrierEntityAttribute != null ? barrierEntityAttribute.getValue() : null;
+
         if (barrierEntity != null) {
             int status = 0;
             try {
