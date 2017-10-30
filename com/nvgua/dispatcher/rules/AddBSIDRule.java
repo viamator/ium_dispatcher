@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 /**
  * Created by Ermolenko V.
- * Date: 17.06.2014
+ * Date : 17.06.2014
  */
 public class AddBSIDRule extends Rule {
 
